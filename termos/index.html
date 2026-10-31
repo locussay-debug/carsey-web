@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Termos de Uso · Carsey</title>
+    <meta
+      name="description"
+      content="Termos de Uso do Carsey, o app que organiza as revisões e manutenções do seu veículo."
+    />
+    <meta name="theme-color" content="#136374" />
+    <link rel="canonical" href="https://app.carsey.com.br/termos/" />
+    <link rel="icon" href="/icon-192.png" />
+    <style>
+      :root {
+        --primaria: #136374;
+        --primaria-escura: #0b3c49;
+        --primaria-suave: #e4f1f3;
+        --fundo: #f2f3f6;
+        --cartao: #ffffff;
+        --borda: #eceef2;
+        --texto: #1b1f27;
+        --texto2: #5a6170;
+        --aviso-fundo: #fff8e8;
+        --aviso-borda: #f5e3b5;
+        --aviso-texto: #5a4500;
+        --perigo: #b42318;
+        --perigo-fundo: #fdeeee;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--fundo);
+        color: var(--texto);
+        font:
+          16px/1.65 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          sans-serif;
+      }
+      a {
+        color: var(--primaria);
+        font-weight: 600;
+        text-underline-offset: 2px;
+      }
+      a:hover {
+        color: var(--primaria-escura);
+      }
+      .topo {
+        background: linear-gradient(135deg, var(--primaria-escura), var(--primaria));
+        color: #fff;
+        padding: 28px 20px 64px;
+      }
+      .topo .marca {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 760px;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+      }
+      .topo .marca img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: #fff;
+      }
+      .topo .marca span {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+      .topo h1 {
+        max-width: 760px;
+        margin: 22px auto 4px;
+        font-size: 28px;
+        line-height: 1.25;
+      }
+      .topo p {
+        max-width: 760px;
+        margin: 0 auto;
+        color: #fff;
+        opacity: 0.85;
+        font-size: 15px;
+      }
+      main {
+        max-width: 760px;
+        margin: -28px auto 0;
+        padding: 0 16px 40px;
+      }
+      .cartao {
+        background: var(--cartao);
+        border-radius: 20px;
+        padding: 28px 24px;
+        box-shadow:
+          0 1px 2px rgba(16, 24, 40, 0.06),
+          0 4px 16px rgba(16, 24, 40, 0.06);
+      }
+      nav.paginas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 20px;
+      }
+      nav.paginas a {
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--primaria-suave);
+        text-decoration: none;
+      }
+      nav.paginas a[aria-current] {
+        background: var(--primaria);
+        color: #fff;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 32px 0 8px;
+        color: var(--primaria-escura);
+        line-height: 1.3;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 20px 0 4px;
+      }
+      p,
+      li {
+        color: var(--texto);
+      }
+      ul,
+      ol {
+        padding-left: 22px;
+      }
+      li {
+        margin: 4px 0;
+      }
+      .resumo {
+        background: var(--primaria-suave);
+        border-radius: 14px;
+        padding: 16px 20px;
+        margin: 4px 0 8px;
+      }
+      .resumo h2 {
+        margin-top: 0;
+      }
+      .aviso {
+        background: var(--aviso-fundo);
+        border: 1px solid var(--aviso-borda);
+        color: var(--aviso-texto);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+      .perigo {
+        background: var(--perigo-fundo);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+      .passos li {
+        margin: 8px 0;
+      }
+      .passos b {
+        color: var(--primaria-escura);
+      }
+      code,
+      kbd {
+        font:
+          600 14px/1 ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          monospace;
+        background: var(--fundo);
+        border: 1px solid var(--borda);
+        border-radius: 6px;
+        padding: 2px 6px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        margin: 8px 0;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 8px;
+        border-bottom: 1px solid var(--borda);
+      }
+      th {
+        color: var(--texto2);
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+      .tabela {
+        overflow-x: auto;
+      }
+      .botao {
+        display: inline-block;
+        background: var(--primaria);
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 12px;
+      }
+      .botao:hover {
+        background: var(--primaria-escura);
+        color: #fff;
+      }
+      .meta {
+        color: var(--texto2);
+        font-size: 14px;
+      }
+      footer {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 20px 40px;
+        color: var(--texto2);
+        font-size: 14px;
+        text-align: center;
+      }
+      @media (max-width: 520px) {
+        .topo h1 {
+          font-size: 24px;
+        }
+        .cartao {
+          padding: 22px 18px;
+        }
+      }
+      @media print {
+        .topo {
+          background: none;
+          color: var(--texto);
+          padding: 0;
+        }
+        .topo .marca {
+          color: var(--texto);
+        }
+        main {
+          margin: 0;
+        }
+        .cartao {
+          box-shadow: none;
+          padding: 0;
+        }
+        nav.paginas {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="/"
+        ><img src="/icon-192.png" alt="" width="40" height="40" /><span>Carsey</span></a
+      >
+      <h1>Termos de Uso</h1>
+      <p>As regras de uso do Carsey, explicadas sem complicação.</p>
+    </header>
+    <main>
+      <article class="cartao">
+        <nav class="paginas" aria-label="Documentos do Carsey">
+          <a href="/privacidade/">Política de Privacidade</a
+          ><a href="/termos/" aria-current="page">Termos de Uso</a
+          ><a href="/excluir-conta/">Excluir conta e dados</a>
+        </nav>
+
+        <p class="meta">
+          Versão 1.0 · Vigente desde 31 de outubro de 2026 · Última atualização: 31 de outubro de
+          2026
+        </p>
+
+        <section class="resumo">
+          <h2>Em poucas palavras</h2>
+          <ul>
+            <li>
+              O Carsey ajuda você a acompanhar as revisões e manutenções do seu veículo, com base
+              nas recomendações dos fabricantes.
+            </li>
+            <li>
+              É uma ferramenta de apoio: não substitui o manual do proprietário, a concessionária
+              nem a avaliação de um mecânico.
+            </li>
+            <li>Seus dados são seus. Você pode baixar uma cópia ou excluir tudo quando quiser.</li>
+            <li>O app é gratuito nesta versão.</li>
+          </ul>
+        </section>
+
+        <h2>1. Aceitação</h2>
+        <p>
+          Estes Termos de Uso regem o uso do aplicativo Carsey, no Android e na web (<a
+            href="https://app.carsey.com.br"
+            >app.carsey.com.br</a
+          >), oferecido por <b>Thiago Freires Lima</b> (“nós”). Ao criar uma conta ou usar o app,
+          você confirma que leu e concorda com estes termos e com a
+          <a href="/privacidade/">Política de Privacidade</a>. Se não concordar, não use o app.
+        </p>
+
+        <h2>2. O que o Carsey faz</h2>
+        <ul>
+          <li>
+            Monta um plano de revisões para o seu veículo a partir de recomendações dos fabricantes
+            e da quilometragem e das datas que você informa.
+          </li>
+          <li>Guarda o histórico de serviços, itens trocados, gastos e recibos.</li>
+          <li>Envia lembretes de manutenção no seu aparelho.</li>
+          <li>Lê notas e recibos automaticamente com inteligência artificial, quando você pede.</li>
+        </ul>
+
+        <h2>3. Uma ferramenta de apoio, não um mecânico</h2>
+        <p>
+          As informações do Carsey são orientativas. Os intervalos de manutenção podem variar
+          conforme a versão do veículo, o uso, as condições de rodagem e as atualizações do
+          fabricante. Antes de decidir sobre um serviço, especialmente itens de segurança como
+          freios, pneus, suspensão e direção, consulte o manual do proprietário e um profissional de
+          confiança. Para manter a garantia de fábrica, siga sempre as regras do fabricante e da
+          concessionária.
+        </p>
+
+        <h2>4. Sua conta</h2>
+        <ul>
+          <li>Você precisa ter <b>18 anos ou mais</b> para usar o Carsey.</li>
+          <li>
+            Informe dados verdadeiros e mantenha sua senha em segredo. Você é responsável pelo que
+            for feito com a sua conta.
+          </li>
+          <li>
+            Enquanto o Carsey estiver em acesso fechado (beta), o cadastro depende de um código de
+            convite.
+          </li>
+          <li>
+            Se perceber qualquer uso indevido da sua conta, troque a senha e escreva para
+            <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a>.
+          </li>
+        </ul>
+
+        <h2>5. Uso permitido</h2>
+        <p>Use o Carsey para fins pessoais e de forma legal. Não é permitido:</p>
+        <ul>
+          <li>tentar acessar dados de outras pessoas ou burlar as proteções do app;</li>
+          <li>
+            enviar arquivos com vírus, conteúdo ilegal ou que não sejam seus ou que você não tenha
+            direito de usar;
+          </li>
+          <li>
+            usar robôs, automações ou tentativas em massa que sobrecarreguem o serviço, incluindo o
+            “Ler nota”;
+          </li>
+          <li>
+            copiar, revender ou explorar comercialmente o app ou o catálogo de manutenção sem
+            autorização.
+          </li>
+        </ul>
+
+        <h2>6. Seus dados e conteúdos</h2>
+        <p>
+          Os dados, fotos e recibos que você coloca no Carsey continuam sendo seus. Você nos
+          autoriza a guardá-los e processá-los apenas para fazer o app funcionar para você, como
+          descrito na <a href="/privacidade/">Política de Privacidade</a>. Você pode exportar seus
+          dados e <a href="/excluir-conta/">excluir sua conta</a> a qualquer momento, direto no app.
+        </p>
+
+        <h2>7. Leitura automática de notas</h2>
+        <p>
+          O “Ler nota” usa inteligência artificial e pode cometer erros em datas, valores ou itens,
+          principalmente com fotos borradas, notas manuscritas ou documentos incompletos. Confira
+          sempre as informações antes de salvar. Pode haver limite de leituras por período para
+          manter o serviço gratuito e estável.
+        </p>
+
+        <h2>8. Lembretes</h2>
+        <p>
+          Os lembretes dependem das informações que você mantém atualizadas (como a quilometragem) e
+          das configurações do seu aparelho, como permissão de notificações e economia de bateria.
+          Eles podem atrasar ou não aparecer, então não dependa só deles para cuidar da manutenção
+          do veículo.
+        </p>
+
+        <h2>9. Preço e mudanças no serviço</h2>
+        <p>
+          O Carsey é gratuito nesta versão. Se um dia passarmos a cobrar por algum recurso, você
+          será avisado com antecedência e poderá decidir se quer continuar. Podemos melhorar, mudar
+          ou encerrar funções do app. Se o Carsey for encerrado, avisaremos com antecedência
+          razoável para você exportar seus dados.
+        </p>
+
+        <h2>10. Disponibilidade</h2>
+        <p>
+          Trabalhamos para manter o app no ar e seus dados seguros, mas não conseguimos garantir
+          funcionamento sem interrupções ou sem erros. Manutenções, falhas de internet ou de
+          fornecedores podem deixar o serviço indisponível por algum tempo.
+        </p>
+
+        <h2>11. Responsabilidade</h2>
+        <p>
+          Na medida permitida pela lei, não respondemos por decisões de manutenção tomadas apenas
+          com base no app, por serviços feitos por terceiros (oficinas, concessionárias, lojas) nem
+          por indisponibilidades fora do nosso controle. Nada nestes termos limita os direitos que
+          você tem pelo Código de Defesa do Consumidor ou por outras leis que não possam ser
+          afastadas.
+        </p>
+
+        <h2>12. Encerramento</h2>
+        <p>
+          Você pode parar de usar o Carsey e excluir sua conta quando quiser, em Perfil → Excluir
+          minha conta. Podemos suspender ou encerrar contas que violem estes termos ou a lei,
+          avisando você sempre que possível.
+        </p>
+
+        <h2>13. Propriedade intelectual</h2>
+        <p>
+          A marca Carsey, o aplicativo, o design e a organização do catálogo de manutenção pertencem
+          aos seus titulares. Marcas e nomes de modelos de veículos pertencem aos respectivos
+          fabricantes e são usados apenas para identificar os veículos.
+        </p>
+
+        <h2>14. Mudanças nestes termos</h2>
+        <p>
+          Podemos atualizar estes termos. A data de atualização fica no topo da página. Se a mudança
+          for importante, avisaremos no app antes de ela valer. Se continuar usando o Carsey depois
+          disso, você concorda com a nova versão.
+        </p>
+
+        <h2>15. Lei aplicável e foro</h2>
+        <p>
+          Estes termos seguem as leis do Brasil. Eventuais conflitos podem ser resolvidos no foro do
+          seu domicílio, como garante o Código de Defesa do Consumidor. Antes disso, fale com a
+          gente: a maioria das questões se resolve por e-mail.
+        </p>
+
+        <h2>16. Contato</h2>
+        <p>
+          Thiago Freires Lima, responsável pelo Carsey:
+          <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a>.
+        </p>
+      </article>
+    </main>
+    <footer>
+      Carsey · O plano de revisão de fábrica do seu carro, traduzido para o seu uso real.<br /><a
+        href="mailto:carseyapp@gmail.com"
+        >carseyapp@gmail.com</a
+      >
+    </footer>
+  </body>
+</html>

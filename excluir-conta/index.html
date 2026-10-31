@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Excluir conta e dados · Carsey</title>
+    <meta
+      name="description"
+      content="Como excluir sua conta do Carsey e todos os dados: passo a passo no app ou por e-mail."
+    />
+    <meta name="theme-color" content="#136374" />
+    <link rel="canonical" href="https://app.carsey.com.br/excluir-conta/" />
+    <link rel="icon" href="/icon-192.png" />
+    <style>
+      :root {
+        --primaria: #136374;
+        --primaria-escura: #0b3c49;
+        --primaria-suave: #e4f1f3;
+        --fundo: #f2f3f6;
+        --cartao: #ffffff;
+        --borda: #eceef2;
+        --texto: #1b1f27;
+        --texto2: #5a6170;
+        --aviso-fundo: #fff8e8;
+        --aviso-borda: #f5e3b5;
+        --aviso-texto: #5a4500;
+        --perigo: #b42318;
+        --perigo-fundo: #fdeeee;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--fundo);
+        color: var(--texto);
+        font:
+          16px/1.65 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          sans-serif;
+      }
+      a {
+        color: var(--primaria);
+        font-weight: 600;
+        text-underline-offset: 2px;
+      }
+      a:hover {
+        color: var(--primaria-escura);
+      }
+      .topo {
+        background: linear-gradient(135deg, var(--primaria-escura), var(--primaria));
+        color: #fff;
+        padding: 28px 20px 64px;
+      }
+      .topo .marca {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 760px;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+      }
+      .topo .marca img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: #fff;
+      }
+      .topo .marca span {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+      .topo h1 {
+        max-width: 760px;
+        margin: 22px auto 4px;
+        font-size: 28px;
+        line-height: 1.25;
+      }
+      .topo p {
+        max-width: 760px;
+        margin: 0 auto;
+        color: #fff;
+        opacity: 0.85;
+        font-size: 15px;
+      }
+      main {
+        max-width: 760px;
+        margin: -28px auto 0;
+        padding: 0 16px 40px;
+      }
+      .cartao {
+        background: var(--cartao);
+        border-radius: 20px;
+        padding: 28px 24px;
+        box-shadow:
+          0 1px 2px rgba(16, 24, 40, 0.06),
+          0 4px 16px rgba(16, 24, 40, 0.06);
+      }
+      nav.paginas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 20px;
+      }
+      nav.paginas a {
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--primaria-suave);
+        text-decoration: none;
+      }
+      nav.paginas a[aria-current] {
+        background: var(--primaria);
+        color: #fff;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 32px 0 8px;
+        color: var(--primaria-escura);
+        line-height: 1.3;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 20px 0 4px;
+      }
+      p,
+      li {
+        color: var(--texto);
+      }
+      ul,
+      ol {
+        padding-left: 22px;
+      }
+      li {
+        margin: 4px 0;
+      }
+      .resumo {
+        background: var(--primaria-suave);
+        border-radius: 14px;
+        padding: 16px 20px;
+        margin: 4px 0 8px;
+      }
+      .resumo h2 {
+        margin-top: 0;
+      }
+      .aviso {
+        background: var(--aviso-fundo);
+        border: 1px solid var(--aviso-borda);
+        color: var(--aviso-texto);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+      .perigo {
+        background: var(--perigo-fundo);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+      .passos li {
+        margin: 8px 0;
+      }
+      .passos b {
+        color: var(--primaria-escura);
+      }
+      code,
+      kbd {
+        font:
+          600 14px/1 ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          monospace;
+        background: var(--fundo);
+        border: 1px solid var(--borda);
+        border-radius: 6px;
+        padding: 2px 6px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        margin: 8px 0;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 8px;
+        border-bottom: 1px solid var(--borda);
+      }
+      th {
+        color: var(--texto2);
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+      .tabela {
+        overflow-x: auto;
+      }
+      .botao {
+        display: inline-block;
+        background: var(--primaria);
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 12px;
+      }
+      .botao:hover {
+        background: var(--primaria-escura);
+        color: #fff;
+      }
+      .meta {
+        color: var(--texto2);
+        font-size: 14px;
+      }
+      footer {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 20px 40px;
+        color: var(--texto2);
+        font-size: 14px;
+        text-align: center;
+      }
+      @media (max-width: 520px) {
+        .topo h1 {
+          font-size: 24px;
+        }
+        .cartao {
+          padding: 22px 18px;
+        }
+      }
+      @media print {
+        .topo {
+          background: none;
+          color: var(--texto);
+          padding: 0;
+        }
+        .topo .marca {
+          color: var(--texto);
+        }
+        main {
+          margin: 0;
+        }
+        .cartao {
+          box-shadow: none;
+          padding: 0;
+        }
+        nav.paginas {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="/"
+        ><img src="/icon-192.png" alt="" width="40" height="40" /><span>Carsey</span></a
+      >
+      <h1>Excluir conta e dados</h1>
+      <p>Como apagar sua conta do Carsey e tudo o que está nela.</p>
+    </header>
+    <main>
+      <article class="cartao">
+        <nav class="paginas" aria-label="Documentos do Carsey">
+          <a href="/privacidade/">Política de Privacidade</a><a href="/termos/">Termos de Uso</a
+          ><a href="/excluir-conta/" aria-current="page">Excluir conta e dados</a>
+        </nav>
+
+        <p class="meta">Última atualização: 31 de outubro de 2026</p>
+
+        <p>
+          Você pode excluir sua conta do Carsey e todos os dados ligados a ela quando quiser. A
+          exclusão é imediata e <b>não pode ser desfeita</b>.
+        </p>
+        <p class="aviso">
+          Antes de excluir, se quiser guardar seu histórico, use
+          <b>Perfil → Exportar meus dados</b> para baixar uma cópia.
+        </p>
+
+        <h2>Pelo aplicativo (o jeito mais rápido)</h2>
+        <ol class="passos">
+          <li>Abra o Carsey e entre na sua conta.</li>
+          <li>Toque em <b>Perfil</b>.</li>
+          <li>Em <b>Dados e privacidade</b>, toque em <b>Excluir minha conta</b>.</li>
+          <li>Leia o aviso e digite <kbd>EXCLUIR</kbd> para confirmar.</li>
+          <li>
+            Toque em <b>Excluir definitivamente</b>. Pronto: sua conta e seus dados são apagados, e
+            você sai do app.
+          </li>
+        </ol>
+        <p>
+          Funciona da mesma forma no Android e na versão web, em
+          <a href="https://app.carsey.com.br">app.carsey.com.br</a>.
+        </p>
+
+        <h2>Sem acesso ao aplicativo</h2>
+        <p>
+          Se você já desinstalou o app ou não consegue entrar, envie um e-mail para
+          <a href="mailto:carseyapp@gmail.com?subject=Excluir%20minha%20conta"
+            >carseyapp@gmail.com</a
+          >
+          com o assunto <b>“Excluir minha conta”</b>, de preferência a partir do e-mail cadastrado.
+          Se precisarmos confirmar que a conta é sua, pediremos por e-mail. A exclusão é concluída
+          em até 15 dias, e avisamos quando terminar.
+        </p>
+        <p>
+          Se esqueceu a senha, também pode usar “Esqueci minha senha” na tela de login, entrar de
+          novo e seguir o passo a passo acima.
+        </p>
+
+        <h2>O que é apagado</h2>
+        <ul>
+          <li>Sua conta de acesso: e-mail, senha e nome.</li>
+          <li>Seus veículos, quilometragens, plano de revisões e ajustes.</li>
+          <li>Serviços, itens, gastos e lembretes.</li>
+          <li>Todas as fotos e PDFs de recibos.</li>
+          <li>Os registros técnicos das leituras de notas (“Ler nota”).</li>
+          <li>Os registros de erros do app ligados à sua conta.</li>
+        </ul>
+        <p>
+          Os lembretes agendados no aparelho são cancelados quando você exclui a conta pelo app. Se
+          excluir por e-mail, desinstale o app ou limpe os dados dele para remover o que ficou no
+          aparelho.
+        </p>
+
+        <h2>O que pode ficar por um tempo</h2>
+        <ul>
+          <li>
+            Cópias de segurança automáticas do provedor de infraestrutura podem manter dados por um
+            curto período, até serem substituídas. Elas não são usadas para mais nada.
+          </li>
+          <li>
+            Registros técnicos de acesso dos provedores (como IP, data e hora) seguem os prazos de
+            segurança de cada um. O IP de tentativas de código de convite erradas é apagado em até 1
+            dia.
+          </li>
+          <li>Se a lei exigir que algum dado seja guardado, ele fica só pelo prazo exigido.</li>
+        </ul>
+
+        <h2>Quer apagar só alguns dados?</h2>
+        <p>
+          Não precisa excluir a conta para isso. No app, você pode apagar um veículo, um serviço, um
+          gasto ou um recibo quando quiser. Para outros pedidos, como apagar registros de erros,
+          escreva para <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a>.
+        </p>
+
+        <p>Saiba mais na <a href="/privacidade/">Política de Privacidade</a>.</p>
+      </article>
+    </main>
+    <footer>
+      Carsey · O plano de revisão de fábrica do seu carro, traduzido para o seu uso real.<br /><a
+        href="mailto:carseyapp@gmail.com"
+        >carseyapp@gmail.com</a
+      >
+    </footer>
+  </body>
+</html>

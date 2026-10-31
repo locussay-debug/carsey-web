@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de Privacidade · Carsey</title>
+    <meta
+      name="description"
+      content="Como o Carsey coleta, usa, guarda e protege seus dados pessoais, de acordo com a LGPD."
+    />
+    <meta name="theme-color" content="#136374" />
+    <link rel="canonical" href="https://app.carsey.com.br/privacidade/" />
+    <link rel="icon" href="/icon-192.png" />
+    <style>
+      :root {
+        --primaria: #136374;
+        --primaria-escura: #0b3c49;
+        --primaria-suave: #e4f1f3;
+        --fundo: #f2f3f6;
+        --cartao: #ffffff;
+        --borda: #eceef2;
+        --texto: #1b1f27;
+        --texto2: #5a6170;
+        --aviso-fundo: #fff8e8;
+        --aviso-borda: #f5e3b5;
+        --aviso-texto: #5a4500;
+        --perigo: #b42318;
+        --perigo-fundo: #fdeeee;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--fundo);
+        color: var(--texto);
+        font:
+          16px/1.65 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          sans-serif;
+      }
+      a {
+        color: var(--primaria);
+        font-weight: 600;
+        text-underline-offset: 2px;
+      }
+      a:hover {
+        color: var(--primaria-escura);
+      }
+      .topo {
+        background: linear-gradient(135deg, var(--primaria-escura), var(--primaria));
+        color: #fff;
+        padding: 28px 20px 64px;
+      }
+      .topo .marca {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 760px;
+        margin: 0 auto;
+        text-decoration: none;
+        color: #fff;
+      }
+      .topo .marca img {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: #fff;
+      }
+      .topo .marca span {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+      .topo h1 {
+        max-width: 760px;
+        margin: 22px auto 4px;
+        font-size: 28px;
+        line-height: 1.25;
+      }
+      .topo p {
+        max-width: 760px;
+        margin: 0 auto;
+        color: #fff;
+        opacity: 0.85;
+        font-size: 15px;
+      }
+      main {
+        max-width: 760px;
+        margin: -28px auto 0;
+        padding: 0 16px 40px;
+      }
+      .cartao {
+        background: var(--cartao);
+        border-radius: 20px;
+        padding: 28px 24px;
+        box-shadow:
+          0 1px 2px rgba(16, 24, 40, 0.06),
+          0 4px 16px rgba(16, 24, 40, 0.06);
+      }
+      nav.paginas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 20px;
+      }
+      nav.paginas a {
+        font-size: 14px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--primaria-suave);
+        text-decoration: none;
+      }
+      nav.paginas a[aria-current] {
+        background: var(--primaria);
+        color: #fff;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 32px 0 8px;
+        color: var(--primaria-escura);
+        line-height: 1.3;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 20px 0 4px;
+      }
+      p,
+      li {
+        color: var(--texto);
+      }
+      ul,
+      ol {
+        padding-left: 22px;
+      }
+      li {
+        margin: 4px 0;
+      }
+      .resumo {
+        background: var(--primaria-suave);
+        border-radius: 14px;
+        padding: 16px 20px;
+        margin: 4px 0 8px;
+      }
+      .resumo h2 {
+        margin-top: 0;
+      }
+      .aviso {
+        background: var(--aviso-fundo);
+        border: 1px solid var(--aviso-borda);
+        color: var(--aviso-texto);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+      .perigo {
+        background: var(--perigo-fundo);
+        border-radius: 12px;
+        padding: 12px 16px;
+      }
+      .passos li {
+        margin: 8px 0;
+      }
+      .passos b {
+        color: var(--primaria-escura);
+      }
+      code,
+      kbd {
+        font:
+          600 14px/1 ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          monospace;
+        background: var(--fundo);
+        border: 1px solid var(--borda);
+        border-radius: 6px;
+        padding: 2px 6px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        margin: 8px 0;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 8px;
+        border-bottom: 1px solid var(--borda);
+      }
+      th {
+        color: var(--texto2);
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+      .tabela {
+        overflow-x: auto;
+      }
+      .botao {
+        display: inline-block;
+        background: var(--primaria);
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 12px;
+      }
+      .botao:hover {
+        background: var(--primaria-escura);
+        color: #fff;
+      }
+      .meta {
+        color: var(--texto2);
+        font-size: 14px;
+      }
+      footer {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 20px 40px;
+        color: var(--texto2);
+        font-size: 14px;
+        text-align: center;
+      }
+      @media (max-width: 520px) {
+        .topo h1 {
+          font-size: 24px;
+        }
+        .cartao {
+          padding: 22px 18px;
+        }
+      }
+      @media print {
+        .topo {
+          background: none;
+          color: var(--texto);
+          padding: 0;
+        }
+        .topo .marca {
+          color: var(--texto);
+        }
+        main {
+          margin: 0;
+        }
+        .cartao {
+          box-shadow: none;
+          padding: 0;
+        }
+        nav.paginas {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="/"
+        ><img src="/icon-192.png" alt="" width="40" height="40" /><span>Carsey</span></a
+      >
+      <h1>Política de Privacidade</h1>
+      <p>Como o Carsey cuida dos seus dados, de forma simples e direta.</p>
+    </header>
+    <main>
+      <article class="cartao">
+        <nav class="paginas" aria-label="Documentos do Carsey">
+          <a href="/privacidade/" aria-current="page">Política de Privacidade</a
+          ><a href="/termos/">Termos de Uso</a><a href="/excluir-conta/">Excluir conta e dados</a>
+        </nav>
+
+        <p class="meta">
+          Versão 1.0 · Vigente desde 31 de outubro de 2026 · Última atualização: 31 de outubro de
+          2026
+        </p>
+
+        <section class="resumo">
+          <h2>Em poucas palavras</h2>
+          <ul>
+            <li>
+              Usamos seus dados só para fazer o Carsey funcionar: guardar seus veículos, o plano de
+              revisões, o histórico e os gastos, e lembrar você da próxima manutenção.
+            </li>
+            <li>
+              Não vendemos seus dados, não mostramos anúncios e não usamos ferramentas de
+              rastreamento ou publicidade.
+            </li>
+            <li>Não coletamos sua localização nem seus contatos.</li>
+            <li>
+              Você pode baixar uma cópia dos seus dados e excluir sua conta a qualquer momento,
+              direto no app.
+            </li>
+            <li>
+              Dúvidas ou pedidos: <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a>.
+            </li>
+          </ul>
+        </section>
+
+        <h2>1. Quem cuida dos seus dados</h2>
+        <p>
+          O Carsey é um aplicativo de manutenção de veículos desenvolvido e mantido por
+          <b>Thiago Freires Lima</b>, que é o <b>controlador</b> dos seus dados pessoais, nos termos
+          da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018, “LGPD”).
+        </p>
+        <p>
+          Para qualquer assunto sobre privacidade, inclusive como encarregado pelo tratamento de
+          dados (art. 41 da LGPD), fale com a gente pelo e-mail
+          <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a>.
+        </p>
+        <p>
+          Esta política vale para o aplicativo Carsey (Android e versão web em
+          <a href="https://app.carsey.com.br">app.carsey.com.br</a>).
+        </p>
+
+        <h2>2. Quais dados coletamos</h2>
+        <p>
+          Coletamos apenas o que você informa e o mínimo necessário para o app funcionar com
+          segurança.
+        </p>
+
+        <h3>Dados da sua conta</h3>
+        <ul>
+          <li>
+            <b>E-mail e senha</b>, para criar e acessar a conta. A senha é guardada pelo serviço de
+            login apenas em formato criptografado (hash); nem nós conseguimos vê-la.
+          </li>
+          <li><b>Nome</b>, se você quiser informar.</li>
+          <li><b>Data e hora em que você aceitou</b> estes termos e esta política.</li>
+          <li>
+            <b>Código de convite</b> usado no cadastro, enquanto o Carsey estiver em acesso fechado
+            (beta).
+          </li>
+          <li>
+            <b>Preferências</b>: se quer receber lembretes e com quanta antecedência (em km e em
+            dias).
+          </li>
+        </ul>
+
+        <h3>Dados dos seus veículos e manutenções</h3>
+        <ul>
+          <li>Marca, modelo, ano, motor, apelido e, se você quiser, a <b>placa</b>.</li>
+          <li>Quilometragem informada e as datas das leituras.</li>
+          <li>
+            Serviços e itens feitos, oficina ou local, descrições, valores e outros gastos com o
+            veículo.
+          </li>
+          <li>Ajustes que você fizer no plano de revisões e os lembretes gerados a partir dele.</li>
+        </ul>
+
+        <h3>Fotos e arquivos de recibos</h3>
+        <ul>
+          <li>
+            As <b>fotos ou PDFs de recibos e notas fiscais</b> que você escolher anexar a um serviço
+            ou gasto. Esses documentos podem conter dados como seu nome ou CPF, se estiverem
+            impressos neles. Eles ficam em uma área privada, que só a sua conta acessa.
+          </li>
+        </ul>
+
+        <h3>Leitura automática de notas (“Ler nota”)</h3>
+        <ul>
+          <li>
+            Quando você usa o “Ler nota” com uma foto, imagem ou PDF, o arquivo é enviado ao serviço
+            de inteligência artificial do Google (API Gemini) apenas para extrair data, valores e
+            itens. <b>Não guardamos esse arquivo</b> por causa da leitura; ele só fica salvo se você
+            decidir anexá-lo como recibo.
+          </li>
+          <li>
+            Guardamos um <b>registro técnico</b> de cada leitura: origem (câmera, galeria, PDF ou QR
+            Code), tipo e tamanho do arquivo, resultado, modelo de IA usado, tempo e custo estimado.
+            Esse registro <b>não contém</b> a imagem nem o conteúdo do documento, e serve para
+            controlar a cota de uso e melhorar a qualidade das leituras.
+          </li>
+          <li>
+            Quando você lê o <b>QR Code de uma NFC-e</b>, o endereço contido no QR Code é consultado
+            no portal público da Secretaria da Fazenda (Sefaz) do estado emissor, para buscar os
+            dados da nota.
+          </li>
+        </ul>
+
+        <h3>Registros de erros do app</h3>
+        <ul>
+          <li>
+            Se o app tiver uma falha, ele envia um <b>registro técnico do erro</b>: a mensagem
+            técnica, o trecho do código onde aconteceu, a tela em que você estava, a versão do app,
+            o sistema (Android ou web) e a data e hora. O registro fica ligado à sua conta para
+            conseguirmos investigar o problema.
+          </li>
+          <li>
+            Antes do envio, o app remove e-mails, chaves de acesso e identificadores que possam
+            aparecer no texto do erro. Esses registros são apagados automaticamente em até
+            <b>90 dias</b>.
+          </li>
+        </ul>
+
+        <h3>Dados de segurança</h3>
+        <ul>
+          <li>
+            Se alguém digitar um código de convite errado, guardamos o <b>endereço IP</b> da
+            tentativa por no máximo 1 dia, para bloquear tentativas em massa.
+          </li>
+          <li>
+            Nossos provedores de infraestrutura mantêm registros técnicos de acesso (como IP, data e
+            hora) para segurança e funcionamento do serviço.
+          </li>
+        </ul>
+
+        <h3>Dados guardados só no seu aparelho</h3>
+        <ul>
+          <li>
+            Sua sessão de login (no Android, no armazenamento seguro do sistema; na web, no
+            armazenamento do navegador), qual veículo está selecionado e os lembretes agendados como
+            notificações locais. As notificações são criadas no próprio aparelho; não usamos serviço
+            de notificações remotas.
+          </li>
+        </ul>
+
+        <h3>Permissões do aparelho</h3>
+        <ul>
+          <li>
+            <b>Câmera</b>: para fotografar recibos e ler QR Codes, só quando você toca nessas
+            opções.
+          </li>
+          <li>
+            <b>Fotos e arquivos</b>: para escolher uma imagem ou PDF que você mesmo selecionar.
+          </li>
+          <li>
+            <b>Notificações</b>: para os lembretes de manutenção. Você pode desligar quando quiser.
+          </li>
+        </ul>
+
+        <h3>O que não coletamos</h3>
+        <p>
+          Não coletamos localização, contatos, identificador de publicidade, histórico de navegação
+          nem dados de outros apps. Não usamos ferramentas de análise de comportamento ou de
+          publicidade.
+        </p>
+
+        <h2>3. Para que usamos e com qual base legal</h2>
+        <div class="tabela">
+          <table>
+            <thead>
+              <tr>
+                <th>Finalidade</th>
+                <th>Base legal (LGPD, art. 7º)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Criar e manter sua conta, guardar seus veículos, o plano de revisões, o histórico,
+                  os gastos e os recibos, e gerar lembretes
+                </td>
+                <td>Execução do contrato que você aceita ao usar o app (inciso V)</td>
+              </tr>
+              <tr>
+                <td>Ler notas e recibos quando você pede (“Ler nota”) e controlar a cota de uso</td>
+                <td>Execução do contrato (inciso V)</td>
+              </tr>
+              <tr>
+                <td>
+                  Investigar e corrigir erros, manter o app estável e proteger contra abusos
+                  (registros de erro e de segurança)
+                </td>
+                <td>Legítimo interesse, sempre com o mínimo de dados (inciso IX)</td>
+              </tr>
+              <tr>
+                <td>
+                  Responder a pedidos seus e cumprir obrigações legais ou ordens de autoridades
+                </td>
+                <td>
+                  Cumprimento de obrigação legal e exercício regular de direitos (incisos II e VI)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Não usamos seus dados para publicidade, não traçamos perfis de comportamento e não tomamos
+          decisões automatizadas que afetem seus direitos.
+        </p>
+
+        <h2>4. Com quem compartilhamos</h2>
+        <p>
+          <b>Não vendemos nem alugamos seus dados.</b> Contamos com alguns fornecedores (operadores,
+          na linguagem da LGPD), que tratam dados apenas para prestar o serviço ao Carsey:
+        </p>
+        <div class="tabela">
+          <table>
+            <thead>
+              <tr>
+                <th>Fornecedor</th>
+                <th>Para quê</th>
+                <th>Quais dados</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Supabase</b></td>
+                <td>
+                  Banco de dados, login, envio de e-mails da conta (confirmação e troca de senha) e
+                  armazenamento dos recibos. Servidores na região de São Paulo (Brasil).
+                </td>
+                <td>
+                  Todos os dados da conta, dos veículos, das manutenções, os recibos e os registros
+                  de erro
+                </td>
+              </tr>
+              <tr>
+                <td><b>Google (API Gemini)</b></td>
+                <td>Leitura automática de notas, só quando você usa o “Ler nota”.</td>
+                <td>A imagem ou PDF enviado para leitura</td>
+              </tr>
+              <tr>
+                <td><b>Portais da Sefaz</b></td>
+                <td>Consulta pública de NFC-e, só quando você lê um QR Code.</td>
+                <td>O endereço contido no QR Code da nota</td>
+              </tr>
+              <tr>
+                <td><b>GitHub (GitHub Pages)</b></td>
+                <td>Hospedagem da versão web do app e destas páginas.</td>
+                <td>Registros técnicos de acesso, como IP</td>
+              </tr>
+              <tr>
+                <td><b>Expo (EAS)</b></td>
+                <td>Ferramenta usada para gerar o aplicativo.</td>
+                <td>Nenhum dado seu de uso do app</td>
+              </tr>
+              <tr>
+                <td><b>Google Play</b></td>
+                <td>Distribuição e atualização do app no Android.</td>
+                <td>Segue a política de privacidade do próprio Google</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Também podemos compartilhar dados quando a lei exigir ou por ordem de autoridade
+          competente, sempre no limite do necessário.
+        </p>
+
+        <h2>5. Transferência internacional</h2>
+        <p>
+          Os dados do app ficam em servidores no Brasil. Alguns fornecedores, como o Google (no “Ler
+          nota”) e o GitHub, podem processar dados em servidores fora do Brasil, especialmente nos
+          Estados Unidos. Nesses casos, a transferência acontece para executar o serviço que você
+          pediu e com fornecedores que adotam cláusulas contratuais e medidas de segurança
+          compatíveis com a LGPD (art. 33).
+        </p>
+
+        <h2>6. Por quanto tempo guardamos</h2>
+        <ul>
+          <li>
+            <b>Conta, veículos, manutenções, gastos e recibos</b>: enquanto sua conta existir. Você
+            pode apagar itens a qualquer momento no app.
+          </li>
+          <li><b>Registros técnicos do “Ler nota”</b>: enquanto sua conta existir.</li>
+          <li><b>Registros de erros</b>: até 90 dias.</li>
+          <li><b>IP de tentativas de convite erradas</b>: até 1 dia.</li>
+          <li>
+            Quando você <a href="/excluir-conta/">exclui a conta</a>, apagamos tudo na hora. Cópias
+            de segurança automáticas do provedor podem manter dados por um curto período, até serem
+            substituídas, e não são usadas para mais nada.
+          </li>
+        </ul>
+
+        <h2>7. Como protegemos</h2>
+        <ul>
+          <li>Toda comunicação entre o app e os servidores é <b>criptografada</b> (HTTPS/TLS).</li>
+          <li>Os dados ficam armazenados com criptografia pelo provedor de infraestrutura.</li>
+          <li>Regras no banco de dados garantem que cada conta só acesse os próprios dados.</li>
+          <li>Recibos ficam em área privada e só são exibidos por links temporários.</li>
+          <li>
+            As chaves de acesso aos serviços ficam apenas nos servidores, nunca no aplicativo.
+          </li>
+        </ul>
+        <p>
+          Nenhum sistema é 100% seguro. Se acontecer um incidente de segurança que possa trazer
+          risco ou dano relevante a você, vamos avisar você e a Autoridade Nacional de Proteção de
+          Dados (ANPD), como manda a lei.
+        </p>
+
+        <h2>8. Seus direitos</h2>
+        <p>A LGPD (art. 18) garante a você, entre outros, os direitos de:</p>
+        <ul>
+          <li>confirmar se tratamos seus dados e <b>acessá-los</b>;</li>
+          <li><b>corrigir</b> dados incompletos, inexatos ou desatualizados;</li>
+          <li>
+            pedir <b>anonimização, bloqueio ou eliminação</b> de dados desnecessários ou tratados em
+            desacordo com a lei;
+          </li>
+          <li><b>portabilidade</b> dos dados;</li>
+          <li><b>eliminação</b> dos dados e saber com quem eles são compartilhados;</li>
+          <li>se <b>opor</b> a um tratamento e revogar consentimentos;</li>
+          <li>
+            apresentar reclamação à <b>ANPD</b> (<a href="https://www.gov.br/anpd">gov.br/anpd</a>).
+          </li>
+        </ul>
+        <h3>Como exercer</h3>
+        <ul>
+          <li>
+            <b>No app</b>: corrija ou apague veículos, serviços, gastos e recibos nas próprias
+            telas. Em Perfil, use <b>Exportar meus dados</b> para baixar uma cópia e
+            <b>Excluir minha conta</b> para apagar tudo.
+            <a href="/excluir-conta/">Veja o passo a passo</a>.
+          </li>
+          <li>
+            <b>Por e-mail</b>, em <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a>, de
+            preferência a partir do e-mail da sua conta. Podemos pedir uma confirmação para ter
+            certeza de que é você. Respondemos em até 15 dias.
+          </li>
+        </ul>
+
+        <h2>9. Crianças e adolescentes</h2>
+        <p>
+          O Carsey é destinado a maiores de 18 anos. Não coletamos dados de crianças e adolescentes
+          de forma intencional. Se você souber de algum caso, escreva para nós e apagaremos os
+          dados.
+        </p>
+
+        <h2>10. Mudanças nesta política</h2>
+        <p>
+          Podemos atualizar esta política quando o app mudar ou a lei exigir. A data de atualização
+          fica no topo da página. Se a mudança for importante, avisaremos no app antes de ela valer.
+        </p>
+
+        <h2>11. Fale com a gente</h2>
+        <p>
+          Thiago Freires Lima, responsável pelo Carsey:
+          <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a>.
+        </p>
+        <p>
+          Veja também os <a href="/termos/">Termos de Uso</a> e
+          <a href="/excluir-conta/">como excluir sua conta</a>.
+        </p>
+      </article>
+    </main>
+    <footer>
+      Carsey · O plano de revisão de fábrica do seu carro, traduzido para o seu uso real.<br /><a
+        href="mailto:carseyapp@gmail.com"
+        >carseyapp@gmail.com</a
+      >
+    </footer>
+  </body>
+</html>
