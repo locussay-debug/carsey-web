@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.carsey.app",
+      "sha256_cert_fingerprints": [
+        "4F:A3:BD:5D:44:85:C0:8E:CB:14:BF:F9:AF:83:C0:29:B3:E9:2C:65:AA:FA:02:75:C6:90:21:6A:30:58:15:6C",
+        "F0:FE:C5:33:72:5E:07:F2:7A:8F:23:85:48:07:E8:45:7C:ED:B2:FD:A4:A4:5A:5D:5C:0B:39:EF:9F:04:40:7F"
+      ]
+    }
+  }
+]
