@@ -322,7 +322,10 @@
         <ul>
           <li>E-mail: <a href="mailto:carseyapp@gmail.com">carseyapp@gmail.com</a></li>
         </ul>
-        <p>Esta política vale para o aplicativo Carsey (Android e versão web em app.carsey.com.br).</p>
+        <p>
+          Esta política vale para o aplicativo Carsey (Android, iPhone e versão web em
+          app.carsey.com.br).
+        </p>
 
         <h2>2. Quais dados coletamos</h2>
         <p>Coletamos apenas o que você informa e o mínimo necessário para o app funcionar com segurança.</p>
@@ -332,17 +335,25 @@
           <li>
             E-mail e, se você criar a conta com senha, a senha. A senha é guardada pelo serviço de
             login apenas em formato criptografado (hash); nem nós conseguimos vê-la. É preciso
-            confirmar o e-mail, salvo quando o próprio provedor de login (como o Google) já o
-            confirma.
+            confirmar o e-mail, salvo quando o próprio provedor de login (como o Google ou a Apple)
+            já o confirma.
           </li>
           <li>
-            Nome, se você quiser informar, ou o nome que o Google nos enviar caso você entre com uma
-            conta Google.
+            Nome, se você quiser informar, ou o nome que o Google ou a Apple nos enviar. A Apple só
+            envia o nome na primeira vez em que você entra com ela; nas seguintes, não recebemos o
+            nome de novo e não apagamos o que já estava salvo.
           </li>
           <li>
             Se você escolher <b>Entrar com o Google</b>, recebemos o e-mail da conta Google, o nome
             (quando houver) e um identificador dessa conta, só para criar ou reconhecer o seu login.
             Não recebemos a senha da conta Google nem os dados de pagamento dela.
+          </li>
+          <li>
+            Se você escolher <b>Iniciar sessão com a Apple</b> no iPhone, recebemos o e-mail que a
+            Apple informar — que pode ser o seu e-mail ou o endereço oculto
+            (<i>privaterelay.appleid.com</i>), se você usar o Ocultar meu e-mail —, o nome só na
+            primeira autorização (quando a Apple enviar) e um identificador dessa conta. Não
+            recebemos a senha da conta Apple nem pedimos outro e-mail no lugar do endereço oculto.
           </li>
           <li>Data e hora em que você aceitou estes termos e esta política.</li>
           <li>Código de convite usado no cadastro, quando o acesso exigir convite.</li>
@@ -629,6 +640,14 @@
                 <td>E-mail, nome (quando houver) e o identificador da conta Google</td>
               </tr>
               <tr>
+                <td><b>Apple (Iniciar sessão com a Apple)</b></td>
+                <td>Autenticação no iPhone, só quando você escolhe entrar com a Apple.</td>
+                <td>
+                  E-mail (pode ser o endereço oculto da Apple), nome só na primeira autorização, se
+                  a Apple enviar, e o identificador da conta Apple
+                </td>
+              </tr>
+              <tr>
                 <td><b>Google (API Gemini)</b></td>
                 <td>Leitura automática de notas, só quando você usa o “Ler nota”.</td>
                 <td>A imagem ou PDF enviado para leitura</td>
@@ -690,7 +709,8 @@
         <p>
           Os dados do app ficam em servidores no Brasil (Supabase, região de São Paulo). Alguns
           fornecedores podem processar dados em servidores fora do Brasil, especialmente nos Estados
-          Unidos: o Google (login com o Google, “Ler nota” / API Gemini e Google Play), o Resend
+          Unidos: o Google (login com o Google, “Ler nota” / API Gemini e Google Play), a Apple
+          (login com a Apple no iPhone), o Resend
           (e-mails da conta) e o GitHub (versão web). Nesses casos, a transferência acontece para
           executar o serviço que você pediu ou o contrato de assinatura, e com fornecedores que
           adotam cláusulas contratuais e medidas de segurança compatíveis com a LGPD (art. 33).
